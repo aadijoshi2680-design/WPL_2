@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    
+    <header class="header">
+        <img src="./logo.png" alt="KJSSE Logo" class="logo">
+        <h1>KJ Somaiya College of Engineering</h1>
+        <p class="academic-year">Academic Year: 2025–2026</p><br>
+
+         <nav class="nav-links">
+        <a href="task1.html">Home</a>
+        <a href="task2.html">Events</a>
+        <a href="task3.html">Departments</a>
+        <a href="task4.html">Clubs</a>
+        <a href="task6.html">Campus Map</a>
+        <a href="task7.html">Event Results</a>
+        <a href="task8.html">Registeration Form</a>
+    </nav>
+
+    <h1>REGISTERATION FORM FOR SKREAM</h1>
+    <hr/>
+    <h3>PERSONAL DETAILS</h3>
+    <form action="./response.html">
+        <label>NAME:</label><br />
+        <input type="text" name="FNAME" placeholder="ENTER UR NAME" required><br /><br />
+        <label>EMAIL:</label> <br />
+        <input type="email" name="EMAIL" placeholder="ENTER UR EMAIL" required><br /><br />
+        <label>DOB:</label> <br />
+        <input type="date" name="AGE" required><br /><br/>
+        <label>ROLL NO:</label><br>
+        <input type="text" name="ROLL NO" required><br><br>
+        <label>EVENT SELECTION:</label>
+        <select name="SPORT SELECTED">
+            <option>FOOTBALL</option>
+            <option>CRICKET</option>
+            <option>SWIMMING</option>
+            <option>BADMINTON</option>
+            <option>VOLLEYBALL</option>
+        </select><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="Gender" id="male" class="gender">
+        <label for="male" class="gender" style="text-align: center;">Male</label>
+        <input type="radio" name="Gender"  id="female">
+        <label for="female" class="gender" style="text-align: center;">Female</label>
+        <input type="radio" name="Gender" class="gender" id="others" class="gender">
+        <label for="others" class="gender" style="text-align: center;">Others</label><br><br>
+
+        <label>SKILLS:</label><br>
+        <input type="checkbox" name="skills" id="Stamina" class="skills">
+        <label for="Stamina" class="skills">STAMINA</label>
+        <input type="checkbox" name="skills" id="Endurance" class="skills">
+        <label for="Endurance" class="skills">ENDURANCE</label>
+        <input type="checkbox" id="Agility" class="skills">
+        <label for="Agility" class="skills">AGILITY</label>
+        <input type="checkbox" id="Flexibility" class="skills">
+        <label for="Flexibility" class="skills">FLEXIBILITY</label>
+    <input type="submit">
+    <input type="reset">
+    </form>
+    
+</body>
+</html>

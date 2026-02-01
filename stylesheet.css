@@ -1,0 +1,239 @@
+/* GLOBAL RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* BODY */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to right, #eef2f7, #f9fbff);
+    color: #222;
+}
+
+/* TOP NAVIGATION BAR  */ 
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #003366, #0055aa);
+    padding: 12px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.nav-logo img {
+    height: 55px;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* Hover underline effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffcc00;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #003366, #0055aa);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo {
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.academic-year {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* CARDS / SECTIONS  */
+.card {
+    background: white;
+    width: 85%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #003366;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+.highlight {
+    background-color: #eef4ff;
+}
+
+/* IMAGE SECTION  */
+.image-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.image-section img {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.caption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
+
+/* TABLE (TASK 7) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #003366;
+    color: white;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f6ff;
+}
+
+tbody tr:hover {
+    background-color: #e6f0ff;
+}
+
+/* FORM (TASK 8) */
+h1 {
+    text-align: center;
+    color: black;
+    margin: 25px 0 10px;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    margin: 20px 0;
+}
+
+hr {
+    width: 60%;
+    margin: 15px auto 25px;
+    border: 1px solid #ccc;
+}
+
+form {
+    width: 55%;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+label {
+    font-weight: 600;
+    color: #003366;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 0.95rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+    margin-top: 10px;
+
+}
+
+.gender{
+    color: #003366;
+}
+
+/* BUTTONS */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #003366;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #cccccc;
+    color: #222;
+}
+
+input[type="submit"]:hover {
+    background-color: #0055aa;
+}
+
+input[type="reset"]:hover {
+    background-color: #aaaaaa;
+}
+
+ /* FOOTER  */
+.footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
